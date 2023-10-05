@@ -387,12 +387,7 @@ footer ul {
 .footer-img-anchor {
     margin-top: 20px;
     margin-bottom: 10px;
-    width: 40px;
-    transition: 0.3s;
-}
-
-.footer-img-anchor:hover {
-    box-shadow: 0 0 10px #b7b7b2;
+    width: 10vw;
 }
 
 #whisper-footer {
@@ -512,7 +507,336 @@ footer ul {
 
 /*TELAS GERAL EM ORIENTAÇÃO PAISAGEM - desktop & mobile rotacionado*/
 @media screen and (orientation: landscape) {
-    .header-menu-mobile-container {
+
+    /*PRIMEIRO RETIRANDO CONTEÚDO QUE SÓ APARECE NO MOBILE*/
+    .header-menu-mobile-container, .section-servicos-mobile, #feedbacks-mobile {
         display: none;
+    }
+
+    body {
+        font-size: 1.2rem;
+    }
+
+    header {
+        border: none;
+        padding-bottom: 0;
+    }
+
+    #header-logo {
+        padding: 5px;
+        display: block;
+        margin: 0 auto;
+        width: 8vw;
+        min-width: 50px;
+    }
+
+    .header-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0;
+        border-top: #c09c83 2px solid;
+        border-bottom: #c09c83 2px solid;
+    }
+
+    .header-img {
+        aspect-ratio: auto;
+        display: inline;
+        height: 30vw;
+    }
+
+    .header-center-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .header-center-text img {
+        aspect-ratio: auto;
+        width: 30vw;
+    }
+
+    #naveg {
+        display: block;
+        z-index: 1;
+        padding: 0.5em;
+        position: sticky;
+        top: 0;
+        background-color: #e7e7e0;
+        border-bottom: #c09c83 2px solid;
+    }
+
+    #naveg ul {
+        display: flex;
+        flex-direction: row;
+        padding: 1em 0.5em;
+        justify-content: center;
+        gap: 0px 10vw;
+    }
+    
+    #naveg li a {
+        text-decoration: none;
+        font-size: 0.7em;
+        font-weight: 500;;
+        color: #ffffff;
+        background-color: #c09c83;
+        padding: 0.7em 1.5em;
+        margin: 0 10px;
+        transition: 0.3s;
+    }
+    
+    #naveg li a:hover {
+        background-color: #ad8970;
+        border-radius: 0.3em;
+        box-shadow: 0px 0px 10px #796e65;
+    }
+
+    .anchor1, .anchor2, #back-to-top {
+        transition: 0.3s;
+    }
+
+    .anchor1:hover {
+        background-color: #ad8970;
+        border-radius: 0.3em;
+        box-shadow: 0px 0px 10px #796e65;
+    }
+
+    .anchor2:hover {
+        background-color: #25282a;
+        border-radius: 0.3em;
+        box-shadow: 0px 0px 10px #796e65;
+    }
+
+    main {
+        padding-top: 0;
+        margin-top: -90px;
+    }
+
+    #sobre-id {
+        top: 12px;
+    }
+
+    .section-sobre {
+        padding: 0;
+        border-bottom: 2px solid #c09c83;
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .sobre-img-container {
+        height: 100%;
+        margin-bottom: -3px;
+    }
+
+    #section-sobre-img {
+        aspect-ratio: auto;
+        display: inline;
+        width: 40vw;
+    }
+
+    .section-sobre-text {
+        border: none;
+        text-align: left;
+    }
+
+    .section-sobre-text span {
+        background-color: #c09c83;
+        height: 2px;
+        width: 270px;
+        display: block;
+        position: absolute;
+    }
+
+    .section-sobre-text img {
+        margin-top: 0;
+        margin-left: -1.5vw;
+    }
+
+    #servicos-id {
+        top: -78px;
+        margin: 0;
+    }
+
+    .servicos-all-container {
+        display: flex;
+        flex-direction: row;
+        height: calc(0.392*98.5vw);
+        align-items: center;
+        margin-top: -10px;
+    }
+
+    .servicos-text {
+        padding: 0 1vw;
+        border-right: 2px solid #363636;
+    }
+
+    .servicos-text img {
+        width: 20vw;
+        max-width: 250px;
+    }
+
+    .section-servicos {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5em;
+    }
+
+    .section-servicos-bg {
+        display: block;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        width: 98.5vw;
+        z-index: -1;
+        margin-top: -20px;
+    }
+
+    .servicos-content-box {
+        padding: 2vw;
+    }
+
+    .servicos-content-box ul {
+        display: flex;
+        flex-direction: row;
+        gap: 2vw;
+    }
+
+    .servicos-content-box ul li {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    /*EDIÇÃO DOS CARDS FLIPPERS DA SEÇÃO DE SERVIÇOS NA VERSÃO DESKTOP/PAISAGEM*/
+    .flip-container {
+        width: 12vw;
+        height: calc(1.25*12vw);
+        perspective: 1000px;
+    }
+    
+    .flipper{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+        transition: transform 0.5s;
+        box-shadow: 0 15px 15px -5px #796e65;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .flip-container:hover .flipper{
+        transform: rotateY(180deg);
+    }
+    
+    .front, .back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-content: center;
+    }
+
+    .front img {
+        aspect-ratio: auto;
+        display: block;
+        height: 100%;
+
+    }
+    
+    .front {
+        background-color: #e7e7e0;
+        color: #363636;
+    }
+    
+    .back {
+        transform: rotateY(180deg);
+        background-color: #c09c83;
+        color: #ffffff;
+        padding: 0.3em;
+    }
+    
+    .back p {
+        text-align: center;
+        font-size: 0.7em;
+    }
+
+    .servico-anchor {
+        background-color: #e7e7e0;
+        color: #25282a;
+        text-decoration: none;
+        text-align: center;
+        padding: 0.5em;
+        margin: 0 auto;
+        width: 70%;
+        transition: 0.3s;
+    }
+
+    .servico-anchor:hover {
+        box-shadow: 0 0 10px -3px #796e65;
+        background-color: #b7b7b2;
+        border-radius: 0.3em;
+    }
+
+    .card-title-servicos {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 0.75em;
+        height: 2em;
+        width: 12vw;
+        padding: 0.7em 0.3em;
+        background-color: #c09c83;
+        color: #ffffff;
+        box-shadow: 0 10px 10px -3px #796e65;
+    }
+
+    /*FIM DA EDIÇÃO DOS CARD FLIPPERS DA SEÇÃO DE SERVIÇOS NA VERSÃO DESKTOP/PAISAGEM*/
+ 
+    .anchor2, #anchor2-section-feedbacks {
+        font-size: 0.8em;
+    }
+
+    .section-feedbacks {
+        display: flex;
+        flex-direction: column;
+        margin-top: -40px;
+    }
+
+    #feedbacks-desktop {
+        display: block;
+        width: 98.5vw;
+    }
+
+    #anchor2-section-feedbacks {
+        position: relative;
+        right: 4vw;
+        bottom: 10vh;
+    }
+
+    #back-to-top:hover {
+        color: #c09c83;
+    }
+
+    footer {
+        height: 1000px;
+    }
+
+    footer ul {
+        gap: 5vw;
+    }
+
+    .footer-img-anchor {
+        width: 2vw;
+    }
+
+    .footer-img-anchor:hover {
+        box-shadow: 0 0 10px #b7b7b2;
     }
 }
