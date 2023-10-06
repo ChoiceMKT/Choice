@@ -1,5 +1,10 @@
 /*TELAS GERAL EM ORIENTAÇÃO RETRATO (mobile first)*/
-/*PRIMEIRO, RETIRANDO CONTEÚDO QUE SÓ APARECERÁ NO LANDSCAPE OU DESKTOP*/
+/*REMOVER OVERRIDE DO AUTO DARK MODE DO CHROME*/
+:root {
+    color-scheme: only light;
+}
+
+/*RETIRAR CONTEÚDO QUE SÓ APARECERÁ NO LANDSCAPE OU DESKTOP*/
 img, #naveg, .section-servicos {
     display: none;
 }
@@ -271,6 +276,7 @@ h6 {
     padding-top: 15px;
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 #details-img {
@@ -760,7 +766,7 @@ footer ul {
         transform: rotateY(180deg);
         background-color: #c09c83;
         color: #ffffff;
-        padding: 0.3em;
+        padding: 1vw;
     }
     
     .back p {
@@ -785,8 +791,10 @@ footer ul {
         border-radius: 0.3em;
     }
 
-    .card-title-servicos {
-        text-align: center;
+    .card-title-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         margin-top: 20px;
         font-size: 0.75em;
         height: 2em;
@@ -795,6 +803,10 @@ footer ul {
         background-color: #c09c83;
         color: #ffffff;
         box-shadow: 0 10px 10px -3px #796e65;
+    }
+
+    .card-title-servicos {
+        text-align: center;
     }
 
     /*FIM DA EDIÇÃO DOS CARD FLIPPERS DA SEÇÃO DE SERVIÇOS NA VERSÃO DESKTOP/PAISAGEM*/
@@ -824,10 +836,6 @@ footer ul {
         color: #c09c83;
     }
 
-    footer {
-        height: 1000px;
-    }
-
     footer ul {
         gap: 5vw;
     }
@@ -838,5 +846,82 @@ footer ul {
 
     .footer-img-anchor:hover {
         box-shadow: 0 0 10px #b7b7b2;
+    }
+}
+
+/*TELAS GERAL EM ORIENTAÇÃO PAISAGEM - desktop & mobile rotacionado - LARGURA DE ATÉ 1000PX*/
+@media screen and (orientation: landscape) and (max-width: 1000px) {
+    body {
+        font-size: 0.8rem;
+    }
+
+    .section-servicos-bg {
+        margin-top: -10px;
+    }
+
+    .section-feedbacks {
+        margin-top: -20px;
+    }
+    
+    footer {
+        margin-top: 4px;
+    }
+}
+
+/*TELAS GERAL EM ORIENTAÇÃO PAISAGEM - desktop & mobile rotacionado - LARGURA DE ATÉ 800PX*/
+@media screen and (orientation: landscape) and (max-width: 800px) {
+    body {
+        font-size: 0.5rem;
+    }
+
+    .section-sobre-text img {
+        width: 20vw;
+    }
+
+    .section-sobre-text span {
+        width: 15vw;
+    }
+
+    .section-servicos-bg {
+        margin-top: 0;
+    }
+
+    footer {
+        margin-top: 8px;
+    }
+
+    #footer-img-anchor1, #footer-img-anchor2 {
+        border-radius: 0px;
+    }
+}
+
+/*TELAS GERAL EM ORIENTAÇÃO PAISAGEM - desktop & mobile rotacionado - LARGURA DE ATÉ 650PX*/
+@media screen and (orientation: landscape) and (max-width: 650px) {
+    body {
+        font-size: 0.3rem;
+    }
+
+    .section-sobre {
+        margin-top: 70px;
+    }
+
+    .anchor1 {
+        padding: 1em 2em;
+    }
+
+    .card-title-container {
+        margin-top: 10px;
+    }
+
+    #back-to-top {
+        padding: 10px;
+    }
+
+    .footer-img-anchor {
+        margin: 0;
+    }
+
+    #whisper-footer {
+        padding: 10px;
     }
 }
