@@ -15,7 +15,7 @@ html {
 }
 
 body {
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-align: center;
     background-color: #e7e7e0;
     color: #363636;
@@ -136,34 +136,16 @@ label span:nth-child(3){
 }
 
 .header-box {
-    padding: 20px 30px;
-}
-
-.header-center-text {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px 30px 0;
 }
 
-.header-center-text img {
-    width: 80vw;
+.header-box img {
+    width: 70vw;
     display: block;
     margin: 0 auto;
-}
-
-.header-center-text p {
-    margin-top: -20px;
-    font-size: 0.7em;
-}
-
-/*BOTÃO ORÇAMENTO DAS SEÇÕES INICIAIS*/
-.anchor1 {
-    text-decoration: none;
-    color: #ffffff;
-    background-color: #c09c83;
-    padding: 10px 20px;
-    margin-top: 30px;
-    width: fit-content;
 }
 
 header {
@@ -211,13 +193,7 @@ h6 {
     color: #363636;
 }
 
-#anchor1-section-sobre {
-    font-size: 0.7em;
-    line-height: 2;
-}
-
 #bible {
-    margin-top: 30px;
     font-size: 0.5em;
 }
 
@@ -290,33 +266,25 @@ h6 {
 
 .details-text {
     font-size: 0.5em;
-}
-
-/*SEÇÃO SERVIÇOS SOMENTE PARA DESKTOP OU LANDSCAPE - LISTA DE CARD FLIPPER*/
-.servicos-content-box {
-    padding: 0 8vw;
+    line-height: 1.2em;
 }
 
 #servicos-line1 {
-    font-size: 0.8em;
+    font-size: 1em;
     margin: 10px 0;
+    padding: 0 5vw;
 }
 
 #servicos-line2 {
-    background-color: #c09c83;
-    padding: 5px 10px;
-    color: #ffffff;
-    font-weight: bold;
-    margin: 0 auto 10px;
-    width: fit-content;
+    font-size: 0.8em;
+    padding: 0 5vw 20px;
 }
 
 .servicos-text img {
     display: block;
     margin: 0 auto;
-    width: 60vw;
+    width: 50vw;
     max-width: 400px;
-    margin-bottom: 25px;
 }
 
 .back p {
@@ -410,7 +378,7 @@ footer ul {
 - correção tamanho de fontes, espaçamentos e medidas no geral*/
 @media screen and (min-width: 500px) {
     body {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     h6 {
@@ -473,7 +441,7 @@ footer ul {
 - correção tamanho fonte e anchor footer*/
 @media screen and (max-width: 350px) {
     body {
-        font-size: 1.2rem;
+        font-size: 0.8rem;
     }
 
     #naveg-mobile {
@@ -520,7 +488,7 @@ footer ul {
     }
 
     body {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     header {
@@ -597,14 +565,8 @@ footer ul {
         box-shadow: 0px 0px 10px #796e65;
     }
 
-    .anchor1, .anchor2, #back-to-top {
+    .anchor2, #back-to-top {
         transition: 0.3s;
-    }
-
-    .anchor1:hover {
-        background-color: #ad8970;
-        border-radius: 0.3em;
-        box-shadow: 0px 0px 10px #796e65;
     }
 
     .anchor2:hover {
@@ -669,18 +631,25 @@ footer ul {
         display: flex;
         flex-direction: row;
         height: calc(0.392*98.5vw);
+        justify-content: center;
+        gap: 3vw;
         align-items: center;
         margin-top: -10px;
     }
 
     .servicos-text {
-        padding: 0 1vw;
+        padding: 3vh 1vw;
         border-right: 2px solid #363636;
+        width: 20vw;
     }
 
     .servicos-text img {
         width: 20vw;
         max-width: 250px;
+    }
+
+    #servicos-line1, #servicos-line2 {
+        padding: 0;
     }
 
     .section-servicos {
@@ -707,6 +676,7 @@ footer ul {
         display: flex;
         flex-direction: row;
         gap: 2vw;
+        justify-content: space-around;
     }
 
     .servicos-content-box ul li {
@@ -717,8 +687,8 @@ footer ul {
 
     /*EDIÇÃO DOS CARDS FLIPPERS DA SEÇÃO DE SERVIÇOS NA VERSÃO DESKTOP/PAISAGEM*/
     .flip-container {
-        width: 12vw;
-        height: calc(1.25*12vw);
+        width: 15vw;
+        height: calc(1.25*15vw);
         perspective: 1000px;
     }
     
@@ -797,8 +767,8 @@ footer ul {
         justify-content: center;
         margin-top: 20px;
         font-size: 0.75em;
-        height: 2em;
-        width: 12vw;
+        height: 3em;
+        width: 15vw;
         padding: 0.7em 0.3em;
         background-color: #c09c83;
         color: #ffffff;
@@ -903,10 +873,6 @@ footer ul {
 
     .section-sobre {
         margin-top: 70px;
-    }
-
-    .anchor1 {
-        padding: 1em 2em;
     }
 
     .card-title-container {
