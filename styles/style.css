@@ -15,7 +15,7 @@ html {
 }
 
 body {
-    font-size: 1rem;
+    font-size: 0.8rem;
     text-align: center;
     background-color: #e7e7e0;
     color: #363636;
@@ -378,7 +378,7 @@ footer ul {
 - correção tamanho de fontes, espaçamentos e medidas no geral*/
 @media screen and (min-width: 500px) {
     body {
-        font-size: 1.5rem;
+        font-size: 0.9rem;
     }
 
     h6 {
@@ -824,6 +824,13 @@ footer ul {
     }
 }
 
+/*TELAS GERAL EM ORIENTAÇÃO PAISAGEM - desktop & mobile rotacionado - LARGURA DE ATÉ 1300PX*/
+@media screen and (orientation: landscape) and (max-width: 1300px) {
+    .back p, .back a{
+        font-size: 0.58em;
+    }
+}
+
 /*TELAS GERAL EM ORIENTAÇÃO PAISAGEM - desktop & mobile rotacionado - LARGURA DE ATÉ 1000PX*/
 @media screen and (orientation: landscape) and (max-width: 1000px) {
     body {
@@ -832,6 +839,10 @@ footer ul {
 
     .section-servicos-bg {
         margin-top: -10px;
+    }
+
+    .back p, .back a{
+        font-size: 0.56em;
     }
 
     .section-feedbacks {
@@ -861,6 +872,10 @@ footer ul {
         margin-top: 0;
     }
 
+    .back p, .back a{
+        font-size: 0.7em;
+    }
+
     footer {
         margin-top: 8px;
     }
@@ -878,6 +893,10 @@ footer ul {
 
     .section-sobre {
         margin-top: 70px;
+    }
+
+    .back p, .back a{
+        font-size: 0.8em;
     }
 
     .card-title-container {
