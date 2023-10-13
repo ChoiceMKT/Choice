@@ -509,8 +509,13 @@ footer ul {
         flex-direction: row;
         justify-content: space-between;
         padding: 0;
-        border-top: #c09c83 2px solid;
         border-bottom: #c09c83 2px solid;
+    }
+
+    .header-box img {
+        width: 40vw;
+        display: block;
+        margin: 0 auto 20px;
     }
 
     .header-img {
@@ -687,8 +692,8 @@ footer ul {
 
     /*EDIÇÃO DOS CARDS FLIPPERS DA SEÇÃO DE SERVIÇOS NA VERSÃO DESKTOP/PAISAGEM*/
     .flip-container {
-        width: 15vw;
-        height: calc(1.25*15vw);
+        width: 16vw;
+        height: calc(1.25*16vw);
         perspective: 1000px;
     }
     
@@ -736,12 +741,12 @@ footer ul {
         transform: rotateY(180deg);
         background-color: #c09c83;
         color: #ffffff;
-        padding: 1vw;
     }
     
     .back p {
-        text-align: center;
+        text-align: left;
         font-size: 0.7em;
+        padding: 1vw;
     }
 
     .servico-anchor {
@@ -798,8 +803,8 @@ footer ul {
 
     #anchor2-section-feedbacks {
         position: relative;
-        right: 4vw;
-        bottom: 10vh;
+        right: 2vw;
+        bottom: 12vh;
     }
 
     #back-to-top:hover {
