@@ -5,7 +5,7 @@
 }
 
 /*RETIRAR CONTEÚDO QUE SÓ APARECERÁ NO LANDSCAPE OU DESKTOP*/
-img, #naveg, .section-servicos {
+img, #naveg, .section-servicos, .anchor2-servicos-desktop-container {
     display: none;
 }
 
@@ -163,6 +163,13 @@ h6 {
 }
 
 /*SEÇÃO SOBRE*/
+#section-sobre-img-mobile {
+    display: block;
+    width: 100vw;
+    aspect-ratio: auto;
+    margin-top: -73px;
+}
+
 .section-sobre-text {
     padding: 0 8vw 10px;
     border-bottom: 2px solid #c09c83;
@@ -170,14 +177,16 @@ h6 {
 
 .section-sobre-text img {
     display: block;
-    margin: -50px auto 0;
+    margin: 5px auto 0;
     width: 70vw;
     max-width: 300px;
 }
 
 .section-sobre-text p {
-    font-size: 0.8em;
+    font-size: 0.85em;
+    line-height: 1.2em;
     margin-bottom: 25px;
+    text-align: left;
 }
 
 .section-sobre-text p strong {
@@ -189,84 +198,14 @@ h6 {
     font-style: italic;
 }
 
-#persona {
-    color: #363636;
-}
-
 #bible {
     font-size: 0.5em;
+    font-style: italic;
 }
 
 /*TAG DE MARCAÇÃO DE POSIÇÃO - SERVIÇOS*/
 #servicos-id {
     margin-bottom: 20px;
-}
-
-/*SEÇÃO SERVIÇOS SOMENTE PARA MOBILE - LISTA ACORDEON*/
-.servicos-list-container {
-    display: flex;
-    flex-direction: column;
-    gap: 0.7em;
-    align-items: center;
-}
-.servicos-list-container details {
-    transition: 0.3s ease-out;
-    background-color: #796e65;
-    padding: 10px;
-    width: 85vw;
-    border-radius: 2px;
-    color: #ffffff;
-    box-shadow: 0 0 10px -2px #796e65;
-}
-
-.servicos-list-container details summary {
-    transition: 0.3s ease-out;
-    font-size: 0.65em;
-    text-align: left;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.servicos-list-container details[open] summary {
-    padding-bottom: 0.5em;
-    border-bottom: #ffffff 1px solid;
-}
-
-.servicos-list-container details summary::-webkit-details-marker {
-    display: none;
-}
-
-.servicos-list-container details summary::after {
-    content: "\002B";
-}
-
-.servicos-list-container details[open] summary::after {
-    content: "\00D7";
-}
-
-.details-open-container {
-    width: 100%;
-    text-align: left;
-    background-color: #796e65;
-    padding-top: 15px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-#details-img {
-    aspect-ratio: auto;
-    display: inline;
-    height: 33vw;
-    width: auto;
-    margin-right: 15px;
-    border-radius: 2px;
-}
-
-.details-text {
-    font-size: 0.5em;
-    line-height: 1.2em;
 }
 
 #servicos-line1 {
@@ -279,6 +218,9 @@ h6 {
     font-size: 0.8em;
     padding: 0 5vw 20px;
 }
+#servicos-line1 strong, #servicos-line2 strong {
+    font-weight: bold;
+}
 
 .servicos-text img {
     display: block;
@@ -287,21 +229,56 @@ h6 {
     max-width: 400px;
 }
 
-.back p {
-    font-size: 0.65em;
+.section-servicos-mobile {
+    border-bottom: 2px solid #c09c83;
+    padding-bottom: 20px;
+}
+
+.section-servicos-mobile ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 10px 3vw;
+}
+
+.section-servicos-mobile li {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    background-color: #c09c83;
+}
+
+.servicos-mobile-text h3 {
+    display: block;
+    background-color: #ad8970;
+    font-size: 0.9em;
+    padding: 0.5em;
+    color: #ffffff;
+}
+
+.servicos-mobile-text p{
+    font-size: 0.75em;
+    line-height: 1.15em;
+    text-align: left;
+    padding: 0.7em;
+}
+
+.servicos-mobile-img {
+    display: inline-block;
+    width: 40vw;
+    aspect-ratio: auto;
 }
 
 /*BOTÃO DE "FAÇA ORÇAMENTO" DAS SEÇÕES DE SERVIÇOS E FEEDBACKS*/
 .anchor2 {
     text-decoration: none;
     color: #ffffff;
-    background-color: #363636;
     padding: 5px 12px;
     font-size: 0.6em;
 }
 
 .anchor2-servicos-mobile-container {
-    margin: 20px 0;
+    margin: 5px 0 20px;
 }
 
 .anchor2-feedbacks-container {
@@ -310,16 +287,47 @@ h6 {
     margin-bottom: -25px;
 }
 
+#anchor2-section-servicos {
+    background-color: #c09c83;
+}
+
 #anchor2-section-feedbacks {
+    background-color: #363636;
     position: relative;
     bottom: 27px;
     right: 20px;
     font-size: 0.45em;
 }
 
+/*TAG DE MARCAÇÃO DE POSIÇÃO - BRANDING*/
+#branding-id {
+    margin-bottom: 10px;
+}
+
+#branding-bg-mobile {
+    display: block;
+    margin: 0;
+    width: 100vw;
+}
+
+/*TAG DE MARCAÇÃO DE POSIÇÃO - GESTÃO*/
+#gestao-id {
+    position: relative;
+    top: 10px;
+    margin-top: -50px;
+}
+
+#gestao-bg-mobile {
+    display: block;
+    margin: 0;
+    width: 100vw;
+    margin-bottom: -12px;
+}
+
 /*TAG DE MARCAÇÃO DE POSIÇÃO - FEEDBACKS*/
 #feedbacks-id {
-    margin-bottom: -10px;
+    margin-bottom: 0px;
+    position: relative;
 }
 
 #feedbacks-mobile {
@@ -483,7 +491,7 @@ footer ul {
 @media screen and (orientation: landscape) {
 
     /*PRIMEIRO RETIRANDO CONTEÚDO QUE SÓ APARECE NO MOBILE*/
-    .header-menu-mobile-container, .section-servicos-mobile, #feedbacks-mobile {
+    .header-menu-mobile-container, #section-sobre-img-mobile, .section-servicos-mobile, #branding-bg-mobile,#gestao-bg-mobile, #feedbacks-mobile {
         display: none;
     }
 
@@ -550,7 +558,7 @@ footer ul {
         flex-direction: row;
         padding: 1em 0.5em;
         justify-content: center;
-        gap: 0px 10vw;
+        gap: 0px 5vw;
     }
     
     #naveg li a {
@@ -586,7 +594,7 @@ footer ul {
     }
 
     #sobre-id {
-        top: 12px;
+        top: 23px;
     }
 
     .section-sobre {
@@ -606,20 +614,12 @@ footer ul {
     #section-sobre-img {
         aspect-ratio: auto;
         display: inline;
-        width: 40vw;
+        width: 50vw;
     }
 
     .section-sobre-text {
         border: none;
         text-align: left;
-    }
-
-    .section-sobre-text span {
-        background-color: #c09c83;
-        height: 2px;
-        width: 270px;
-        display: block;
-        position: absolute;
     }
 
     .section-sobre-text img {
@@ -628,7 +628,7 @@ footer ul {
     }
 
     #servicos-id {
-        top: -78px;
+        top: -60px;
         margin: 0;
     }
 
@@ -646,6 +646,9 @@ footer ul {
         padding: 3vh 1vw;
         border-right: 2px solid #363636;
         width: 20vw;
+        display: flex;
+        flex-direction: column;
+        gap: 1.2em;
     }
 
     .servicos-text img {
@@ -665,6 +668,7 @@ footer ul {
 
     .section-servicos-bg {
         display: block;
+        left: 0;
         margin: 0;
         padding: 0;
         position: absolute;
@@ -745,7 +749,8 @@ footer ul {
     
     .back p {
         text-align: left;
-        font-size: 0.7em;
+        line-height: 1.2em;
+        font-size: 0.6em;
         padding: 1vw;
     }
 
@@ -790,6 +795,23 @@ footer ul {
         font-size: 0.8em;
     }
 
+    #servicos-line2 {
+        margin-bottom: 10px;
+    }
+
+    #anchor2-section-servicos {
+        top: 10px;
+    }
+
+    #branding-id {
+        margin-top: 10px;
+    }
+
+    #branding-bg-desktop, #gestao-bg-desktop {
+        display: block;
+        width: 98.5vw;
+    }
+
     .section-feedbacks {
         display: flex;
         flex-direction: column;
@@ -826,8 +848,12 @@ footer ul {
 
 /*TELAS GERAL EM ORIENTAÇÃO PAISAGEM - desktop & mobile rotacionado - LARGURA DE ATÉ 1300PX*/
 @media screen and (orientation: landscape) and (max-width: 1300px) {
+    .section-sobre-text p {
+        font-size: 0.6em;
+    }
+
     .back p, .back a{
-        font-size: 0.58em;
+        font-size: 0.5em;
     }
 }
 
@@ -842,7 +868,7 @@ footer ul {
     }
 
     .back p, .back a{
-        font-size: 0.56em;
+        font-size: 0.48em;
     }
 
     .section-feedbacks {
@@ -873,7 +899,7 @@ footer ul {
     }
 
     .back p, .back a{
-        font-size: 0.7em;
+        font-size: 0.6em;
     }
 
     footer {
@@ -896,7 +922,7 @@ footer ul {
     }
 
     .back p, .back a{
-        font-size: 0.8em;
+        font-size: 0.7em;
     }
 
     .card-title-container {
