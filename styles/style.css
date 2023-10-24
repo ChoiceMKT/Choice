@@ -185,7 +185,7 @@ h6 {
 .section-sobre-text p {
     font-size: 0.85em;
     line-height: 1.2em;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     text-align: left;
 }
 
@@ -206,6 +206,10 @@ h6 {
 /*TAG DE MARCAÇÃO DE POSIÇÃO - SERVIÇOS*/
 #servicos-id {
     margin-bottom: 20px;
+}
+
+.servicos-text {
+    padding: 0 10vw;
 }
 
 #servicos-line1 {
@@ -257,10 +261,10 @@ h6 {
 }
 
 .servicos-mobile-text p{
-    font-size: 0.75em;
-    line-height: 1.15em;
+    font-size: 0.6em;
+    line-height: 1.2em;
     text-align: left;
-    padding: 0.7em;
+    padding: 1.2em 1.7em;
 }
 
 .servicos-mobile-img {
@@ -273,7 +277,7 @@ h6 {
 .anchor2 {
     text-decoration: none;
     color: #ffffff;
-    padding: 5px 12px;
+    padding: 5px;
     font-size: 0.6em;
 }
 
@@ -295,7 +299,7 @@ h6 {
     background-color: #363636;
     position: relative;
     bottom: 27px;
-    right: 20px;
+    right: 10px;
     font-size: 0.45em;
 }
 
@@ -496,7 +500,7 @@ footer ul {
     }
 
     body {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     header {
@@ -508,7 +512,7 @@ footer ul {
         padding: 5px;
         display: block;
         margin: 0 auto;
-        width: 8vw;
+        width: 5vw;
         min-width: 50px;
     }
 
@@ -521,7 +525,7 @@ footer ul {
     }
 
     .header-box img {
-        width: 40vw;
+        width: 30vw;
         display: block;
         margin: 0 auto 20px;
     }
@@ -590,11 +594,11 @@ footer ul {
 
     main {
         padding-top: 0;
-        margin-top: -90px;
+        margin-top: -80px;
     }
 
     #sobre-id {
-        top: 23px;
+        top: 26px;
     }
 
     .section-sobre {
@@ -614,21 +618,28 @@ footer ul {
     #section-sobre-img {
         aspect-ratio: auto;
         display: inline;
-        width: 50vw;
+        width: 30vw;
     }
 
     .section-sobre-text {
         border: none;
         text-align: left;
+        padding: 1vh 2vw;
     }
 
     .section-sobre-text img {
-        margin-top: 0;
-        margin-left: -1.5vw;
+        margin-top: 10px;
+        margin-bottom: 7px;
+        margin-left: -0.5vw;
+        width: 11vw;
+    }
+
+    .section-sobre-text p {
+        font-size: 0.6em;
     }
 
     #servicos-id {
-        top: -60px;
+        top: -50px;
         margin: 0;
     }
 
@@ -643,7 +654,7 @@ footer ul {
     }
 
     .servicos-text {
-        padding: 3vh 1vw;
+        padding: 3vh 1vw 3vh 7vw;
         border-right: 2px solid #363636;
         width: 20vw;
         display: flex;
@@ -652,7 +663,7 @@ footer ul {
     }
 
     .servicos-text img {
-        width: 20vw;
+        width: 12vw;
         max-width: 250px;
     }
 
@@ -674,17 +685,17 @@ footer ul {
         position: absolute;
         width: 98.5vw;
         z-index: -1;
-        margin-top: -20px;
+        margin-top: -10px;
     }
 
     .servicos-content-box {
-        padding: 2vw;
+        padding: 2vw 7vw 2vw 1vw;
     }
 
     .servicos-content-box ul {
         display: flex;
         flex-direction: row;
-        gap: 2vw;
+        gap: 1vw;
         justify-content: space-around;
     }
 
@@ -696,8 +707,8 @@ footer ul {
 
     /*EDIÇÃO DOS CARDS FLIPPERS DA SEÇÃO DE SERVIÇOS NA VERSÃO DESKTOP/PAISAGEM*/
     .flip-container {
-        width: 16vw;
-        height: calc(1.25*16vw);
+        width: 14vw;
+        height: calc(1.25*14vw);
         perspective: 1000px;
     }
     
@@ -750,7 +761,7 @@ footer ul {
     .back p {
         text-align: left;
         line-height: 1.2em;
-        font-size: 0.6em;
+        font-size: 0.5em;
         padding: 1vw;
     }
 
@@ -776,9 +787,9 @@ footer ul {
         align-items: center;
         justify-content: center;
         margin-top: 20px;
-        font-size: 0.75em;
+        font-size: 0.6em;
         height: 3em;
-        width: 15vw;
+        width: 13vw;
         padding: 0.7em 0.3em;
         background-color: #c09c83;
         color: #ffffff;
@@ -804,12 +815,16 @@ footer ul {
     }
 
     #branding-id {
-        margin-top: 10px;
+        margin-top: 20px;
     }
 
     #branding-bg-desktop, #gestao-bg-desktop {
         display: block;
         width: 98.5vw;
+    }
+
+    #gestao-id {
+        top: 20px;
     }
 
     .section-feedbacks {
@@ -849,7 +864,7 @@ footer ul {
 /*TELAS GERAL EM ORIENTAÇÃO PAISAGEM - desktop & mobile rotacionado - LARGURA DE ATÉ 1300PX*/
 @media screen and (orientation: landscape) and (max-width: 1300px) {
     .section-sobre-text p {
-        font-size: 0.6em;
+        font-size: 0.4em;
     }
 
     .back p, .back a{
@@ -863,8 +878,16 @@ footer ul {
         font-size: 0.8rem;
     }
 
+    .section-sobre-text p {
+        font-size: 0.32em;
+    }
+
     .section-servicos-bg {
         margin-top: -10px;
+    }
+
+    .servicos-text {
+        font-size: 0.9em;
     }
 
     .back p, .back a{
@@ -884,14 +907,15 @@ footer ul {
 @media screen and (orientation: landscape) and (max-width: 800px) {
     body {
         font-size: 0.5rem;
+    }   
+
+    #section-sobre-img {
+        margin-top: 10px;
+        margin-bottom: 2px;
     }
 
-    .section-sobre-text img {
-        width: 20vw;
-    }
-
-    .section-sobre-text span {
-        width: 15vw;
+    .section-sobre-text p {
+        font-size: 0.4em;
     }
 
     .section-servicos-bg {
@@ -919,6 +943,14 @@ footer ul {
 
     .section-sobre {
         margin-top: 70px;
+    }
+
+    #section-sobre-img {
+        margin-top: 0;
+    }
+
+    .section-sobre-text p {
+        font-size: 0.5em;
     }
 
     .back p, .back a{
