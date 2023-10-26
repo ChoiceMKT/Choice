@@ -618,7 +618,7 @@ footer ul {
     #section-sobre-img {
         aspect-ratio: auto;
         display: inline;
-        width: 30vw;
+        width: 45vw;
     }
 
     .section-sobre-text {
@@ -635,7 +635,7 @@ footer ul {
     }
 
     .section-sobre-text p {
-        font-size: 0.6em;
+        font-size: 0.85em;
     }
 
     #servicos-id {
@@ -761,7 +761,7 @@ footer ul {
     .back p {
         text-align: left;
         line-height: 1.2em;
-        font-size: 0.5em;
+        font-size: 0.7em;
         padding: 1vw;
     }
 
@@ -864,11 +864,11 @@ footer ul {
 /*TELAS GERAL EM ORIENTAÇÃO PAISAGEM - desktop & mobile rotacionado - LARGURA DE ATÉ 1300PX*/
 @media screen and (orientation: landscape) and (max-width: 1300px) {
     .section-sobre-text p {
-        font-size: 0.4em;
+        font-size: 0.68em;
     }
 
     .back p, .back a{
-        font-size: 0.5em;
+        font-size: 0.52em;
     }
 }
 
@@ -879,7 +879,7 @@ footer ul {
     }
 
     .section-sobre-text p {
-        font-size: 0.32em;
+        font-size: 0.52em;
     }
 
     .section-servicos-bg {
@@ -891,7 +891,7 @@ footer ul {
     }
 
     .back p, .back a{
-        font-size: 0.48em;
+        font-size: 0.42em;
     }
 
     .section-feedbacks {
@@ -915,7 +915,7 @@ footer ul {
     }
 
     .section-sobre-text p {
-        font-size: 0.4em;
+        font-size: 0.65em;
     }
 
     .section-servicos-bg {
@@ -923,7 +923,7 @@ footer ul {
     }
 
     .back p, .back a{
-        font-size: 0.6em;
+        font-size: 0.55em;
     }
 
     footer {
@@ -950,7 +950,7 @@ footer ul {
     }
 
     .section-sobre-text p {
-        font-size: 0.5em;
+        font-size: 0.8em;
     }
 
     .back p, .back a{
